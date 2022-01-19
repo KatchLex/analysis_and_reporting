@@ -17,13 +17,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "e2e": "protractor ./test/e2e/config/protractor.config.js",
-    "pree2e": "node ./test/e2e/config/utils/cleanup.js",
-    "postinstall": "webdriver-manager update --versions.standalone=3.10.0 --gecko=false",
-    "e2e:update": "webdriver-manager update",
-    "e2e:generate-report": "node ./test/e2e/utils/reporter.js",
-    "e2e:start-server": "webdriver-manager start --versions.standalone=3.10.0"
+    "pretest": "node ./test/config/utils/cleanup.js",
+    "test": "protractor ./test/config/protractor.config.js",
+    "postinstall": "webdriver-manager update"
   },
-  "author": "Alexander_Kachalov",
+  "author": "",
   "license": "ISC"
 }

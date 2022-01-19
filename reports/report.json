@@ -10,7 +10,7 @@
         "line": 1
       }
     ],
-    "uri": "test\\e2e\\features\\menu.feature",
+    "uri": "test\\features\\menu.feature",
     "elements": [
       {
         "id": "menu;verify-user-can-open-menu",
@@ -35,11 +35,11 @@
             "line": 6,
             "name": "I open \"https://www.epam.com/\" url",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\browserInteractions.js:11"
+              "location": "test\\step_definitions\\actionSteps\\browserInteractions.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 7126000000
+              "duration": 6065000000
             }
           },
           {
@@ -48,11 +48,11 @@
             "line": 7,
             "name": "I wait until \"Menu\" is present",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\waiters.js:9"
+              "location": "test\\step_definitions\\actionSteps\\waiters.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 20000000
             }
           },
           {
@@ -61,11 +61,11 @@
             "line": 8,
             "name": "Text of \"Menu\" should contain \"MENU\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:30"
+              "location": "test\\step_definitions\\validationSteps\\validationSteps.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 17000000
             }
           },
           {
@@ -74,11 +74,11 @@
             "line": 10,
             "name": "I click \"Menu\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\mouseInteractions.js:6"
+              "location": "test\\step_definitions\\actionSteps\\mouseInteractions.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 65000000
             }
           },
           {
@@ -87,11 +87,11 @@
             "line": 11,
             "name": "I wait until \"Expanded Menu\" is present",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\waiters.js:9"
+              "location": "test\\step_definitions\\actionSteps\\waiters.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 23000000
             }
           },
           {
@@ -100,11 +100,11 @@
             "line": 12,
             "name": "\"Expanded Menu\" should be visible",
             "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:8"
+              "location": "test\\step_definitions\\validationSteps\\validationSteps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 10000000
             }
           },
           {
@@ -113,11 +113,11 @@
             "line": 13,
             "name": "Count of \"Expanded Menu Sublists\" should not be \"3\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:16"
+              "location": "test\\step_definitions\\validationSteps\\validationSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 13000000
             }
           },
           {
@@ -126,11 +126,11 @@
             "line": 14,
             "name": "Text of \"Expanded Menu Row Titles\" should contain \"HOW WE DO IT\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:30"
+              "location": "test\\step_definitions\\validationSteps\\validationSteps.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 76000000
             }
           },
           {
@@ -139,11 +139,11 @@
             "line": 15,
             "name": "Count of \"Expanded Menu Row Titles\" should be \"6\"",
             "match": {
-              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:16"
+              "location": "test\\step_definitions\\validationSteps\\validationSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 5000000
             }
           },
           {
@@ -152,22 +152,22 @@
             "line": 16,
             "name": "I wait \"1\" seconds",
             "match": {
-              "location": "test\\e2e\\step_definitions\\actionSteps\\browserInteractions.js:6"
+              "location": "test\\step_definitions\\actionSteps\\browserInteractions.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1012000000
+              "duration": 1004000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "test\\e2e\\step_definitions\\hooks.js:6"
+              "location": "test\\step_definitions\\hooks.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
