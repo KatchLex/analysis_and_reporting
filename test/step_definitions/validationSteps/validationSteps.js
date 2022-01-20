@@ -35,18 +35,12 @@ Then(/^Text of "([^"]*)" should( not)? contain "([^"]*)"$/, async (alias, notArg
     return expect(elementText.indexOf(textToContain)).to.not.equal(-1);    
 });
 
-// Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {  //an example of poor error messages on failure
-//     let pageTitle = await browser.getTitle();
-//     let result = (pageTitle === text);
-//     return expect(result).to.be.equal(!notArg);    
-// });
-
-Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
-    notArg = notArg ? ' not' : '';
+Then(/^Page title should (not )?be "([^"]*)"$/, async (notArg, text) => {
+    notArg = notArg ? 'not ' : '';
     let pageTitle = await browser.getTitle();
     logger.info(`Page title should${notArg} be ${text}`);
     if (notArg){
-        return expect(pageTitle).to.not.equal(text);
+        return expect(pageTitle).to.not.be.equal(text);
     }
     else {
         return expect(pageTitle).to.be.equal(text);

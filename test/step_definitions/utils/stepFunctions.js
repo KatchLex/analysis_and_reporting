@@ -1,8 +1,8 @@
 const EC = protractor.ExpectedConditions;
-const epamPO = require('../../po/epamPageObject.json');
+const pageObject = require('../../pageObjects/westerndigital.json');
 const logger = require('../../config/loggerConfig.js').logger;
     let getPageObjectElement = (alias) => {
-        let pageElement = epamPO[alias];
+        let pageElement = pageObject[alias];
         if (pageElement['isCollection'] === true) {
             pageElement = element.all(by.css(pageElement.selector));
             return pageElement;
