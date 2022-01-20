@@ -7,8 +7,6 @@ yarn-error.log*
 
 # Reports folder
 reports
-*.html
-*.json
 
 # Runtime data
 pids

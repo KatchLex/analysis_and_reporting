@@ -1,0 +1,14 @@
+{
+    "Dropdown": {
+        "isCollection": false,
+        "selector": "div.dropdownSelectOption"
+    },
+    "Accept Cookies": {
+        "isCollection": false,
+        "selector": "#truste-consent-button"
+    },
+    "Continue": {
+        "isCollection": false,
+        "selector": ".dropdownSelectOption+a"
+    }   
+}
