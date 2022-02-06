@@ -1,5 +1,5 @@
 {
-  "name": "bdd_protractor_cucumber_framework",
+  "name": "reporing_with_cucumber_pretty",
   "version": "1.0.0",
   "description": "BDD home task",
   "main": "index.js",
@@ -18,8 +18,7 @@
   "devDependencies": {},
   "scripts": {
     "pretest": "node ./test/config/utils/cleanup.js",
-    "test": "protractor ./test/config/protractor.config.js",
-    "postinstall": "webdriver-manager update"
+    "test": "protractor ./test/config/protractor.config.js"
   },
   "author": "",
   "license": "ISC"

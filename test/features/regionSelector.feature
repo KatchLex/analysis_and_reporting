@@ -10,4 +10,4 @@ Feature: Region Selection
     Then I click "Accept Cookies"
     And I click "Continue"
     And I wait "5" seconds
-    And Page title should not be "Hard Drives, USB Drives, and Memory Cards | Western Digital"
+    And Page title should be "Hard Drives, USB Drives, and Memory Cards | Western Digital"

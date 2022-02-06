@@ -1,4 +1,4 @@
-BDD task with Page objects in .json file
+Analysis and reporting task
 
 npm install
 ```
