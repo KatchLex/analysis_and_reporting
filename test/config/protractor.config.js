@@ -4,6 +4,8 @@ const path = require('path');
 const yargs = require('yargs').argv;
 const logger = require('./loggerConfig.js').logger;
 const reporter = require('cucumber-html-reporter');
+const cucumberJunitConvert = require ('cucumber-junit-convert');
+
  
 const reporterOptions = {
         theme: 'bootstrap',
@@ -12,6 +14,13 @@ const reporterOptions = {
         reportSuiteAsScenarios: true,
         launchReport: true
     };
+
+const xmlOptions = {
+    inputJsonFile: './reports/report.json',
+    outputXmlFile: './reports/xmlReport.xml'
+    };
+
+cucumberJunitConvert.convert(xmlOptions);
 
 exports.config = {
     allScriptsTimeout: 200000,

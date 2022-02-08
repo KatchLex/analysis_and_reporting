@@ -8,6 +8,7 @@
     "chai-as-promised": "^7.1.1",
     "cucumber": "^6.0.5",
     "cucumber-html-reporter": "^5.0.2",
+    "cucumber-junit-convert": "^2.0.0",
     "cucumber-pretty": "^6.0.0",
     "fs-extra": "^8.1.0",
     "protractor": "^5.4.3",
@@ -15,9 +16,7 @@
     "winston": "^3.2.1",
     "yargs": "^14.0.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "pretest": "node ./test/config/utils/cleanup.js",
     "test": "protractor ./test/config/protractor.config.js"
   },
   "author": "",
