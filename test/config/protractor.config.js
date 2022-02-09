@@ -39,7 +39,7 @@ exports.config = {
     disableChecks: true,    
     directConnect: true,    
     cucumberOpts: {
-        require: [path.resolve('./test/step_definitions/**/*.js')],
+        require: [path.resolve('./test/stepDefinitions/**/*.js')],
         ignoreUncaughtExceptions: true,
         format: ['json:./reports/report.json','./node_modules/cucumber-pretty'],
         tags: yargs.tag || '@handler'
