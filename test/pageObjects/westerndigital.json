@@ -10,5 +10,15 @@
     "Continue": {
         "isCollection": false,
         "selector": ".dropdownSelectOption+a"
-    }   
+    },   
+
+    "Search icon": {
+        "isCollection": false,
+        "selector": ".top-btn"
+    },
+    
+    "Search input": {
+        "isCollection": false,
+        "selector": ".search-input"
+    }
 }

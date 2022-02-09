@@ -1,7 +1,7 @@
 {
   "name": "reporing_with_cucumber_pretty",
   "version": "1.0.0",
-  "description": "BDD home task",
+  "description": "Analysis and Reporting",
   "main": "index.js",
   "dependencies": {
     "chai": "^4.2.0",
@@ -14,7 +14,7 @@
     "protractor": "^5.4.3",
     "protractor-cucumber-framework": "^6.2.0",
     "winston": "^3.2.1",
-    "yargs": "^14.0.0"
+    "yargs": "^14.2.3"
   },
   "scripts": {
     "test": "protractor ./test/config/protractor.config.js"

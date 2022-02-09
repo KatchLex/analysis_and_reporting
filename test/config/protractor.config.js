@@ -42,7 +42,7 @@ exports.config = {
         require: [path.resolve('./test/step_definitions/**/*.js')],
         ignoreUncaughtExceptions: true,
         format: ['json:./reports/report.json','./node_modules/cucumber-pretty'],
-        tags: yargs.tag || '@westdigital'
+        tags: yargs.tag || '@handler'
     },
     onPrepare: () => {
         logger.info('Maximizing browser window');
