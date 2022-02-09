@@ -20,5 +20,10 @@
     "Search input": {
         "isCollection": false,
         "selector": ".search-input"
+    },
+
+    "Search results": {
+        "isCollection": true,
+        "selector": ".item-title"
     }
 }

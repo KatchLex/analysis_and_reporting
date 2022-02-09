@@ -18,5 +18,6 @@ Feature: Short sites overview
     Then Page title should be "Мебельный сервис | Мебельная фурнитура | Сообщество специалистов и партнёров"
     And I click "Search icon"
     Then I wait "1" seconds
-    And I click "Search input"
-    And I type "петли" text
+    And I type "фурнитура" text in "Search input"
+    Then I wait "3" seconds
+    And Count of "Search results" should be "20"
