@@ -1,7 +1,8 @@
 const EC = protractor.ExpectedConditions;
 const pageObject = require('../../pageObjects/westerndigital.json');
 const logger = require('../../config/loggerConfig.js').logger;
-    let getPageObjectElement = (alias) => {
+
+    const getPageObjectElement = (alias) => {
         let pageElement = pageObject[alias];
         if (pageElement['isCollection'] === true) {
             pageElement = element.all(by.css(pageElement.selector));
@@ -13,7 +14,7 @@ const logger = require('../../config/loggerConfig.js').logger;
         }
     };
 
-    let expectedCondition = (shouldBe) => {
+    const expectedCondition = (shouldBe) => {
         let expectedConditionFunction;
     
         switch (shouldBe) {
@@ -42,18 +43,31 @@ const logger = require('../../config/loggerConfig.js').logger;
         return expectedConditionFunction;
     };
 
-    let highlightElement = (alias) => {
-        let styleOptions = "color: Red; border: 2px solid red;";
-        let webElement = getPageObjectElement(alias).getWebElement();
-        return browser.executeScript("arguments[0].setAttribute('style', arguments[1]);", webElement, styleOptions).then(() => {
-            return browser.wait(() => {
-                return getPageObjectElement(alias).getCssValue('border').then((border) => {
-                    return border.toString().indexOf('2px solid rgb(255,') > -1;
-                });
-            }, 5000, 'Style is not applied!');
-        }, (error)=> {
-            loggers.error('Error is: ' + error);
-        });
+    // const highlightElement = (alias) => {
+    //     const styleOptions = "color: Red; border: 2px solid red;";
+    //     const webElement = getPageObjectElement(alias).getWebElement();
+    //     return browser.executeScript("arguments[0].setAttribute('style', arguments[1]);", webElement, styleOptions).then(() => {
+    //         return browser.wait(() => {
+    //             return getPageObjectElement(alias).getCssValue('border').then((border) => {
+    //                 return border.toString().indexOf('2px solid rgb(255,') > -1;
+    //             });
+    //         }, 5000, 'Style is not applied!');
+    //     }, (error)=> {
+    //         loggers.error('Error is: ' + error);
+    //     });
+    // };
+
+    const highlightElement = async(alias) => {
+        try {
+          const styleOptions = "color: Red; border: 2px solid red;";
+          const webElement = getPageObjectElement(alias).getWebElement();
+          await browser.executeScript("arguments[0].setAttribute('style', arguments[1]);", webElement, styleOptions);
+          await browser.getPageObjectElement(alias).getCssValue('border');
+          await wait((border.toString().indexOf('2px solid rgb(255,') > -1), 5000);
+          throw Error('Style is not applied!')
+        } catch(error) {
+            logger.error('Error is: ' + error);
+        }
     };
 
     module.exports = {
